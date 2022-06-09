@@ -5,11 +5,20 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test001", "test001\test001.vcxproj", "{F44BB16B-D1FC-43F9-BFC1-A7E3E155DB7C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CollisionDetection", "CollisionDetection\CollisionDetection.vcxproj", "{8678ACB7-FAF2-4018-923B-07F233B6636B}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CollisionDetectionTest", "CollisionDetectionTest\CollisionDetectionTest.vcxproj", "{15A2EB63-8112-4989-819F-C2BCC444C022}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Math", "Math\Math.vcxitems", "{C6380970-6BF6-469B-BB05-43E907858CD4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CollisionDetection", "CollisionDetection\CollisionDetection.vcxitems", "{AB57DFBE-90DE-4536-B9BA-1B72A175C97A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathTest", "MathTest\MathTest.vcxproj", "{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Math\Math.vcxitems*{8c045216-e6be-4f84-b7e3-81dfa6ca33fd}*SharedItemsImports = 4
+		CollisionDetection\CollisionDetection.vcxitems*{ab57dfbe-90de-4536-b9ba-1b72a175c97a}*SharedItemsImports = 9
+		Math\Math.vcxitems*{c6380970-6bf6-469b-bb05-43e907858cd4}*SharedItemsImports = 9
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
@@ -25,14 +34,6 @@ Global
 		{F44BB16B-D1FC-43F9-BFC1-A7E3E155DB7C}.Release|x64.Build.0 = Release|x64
 		{F44BB16B-D1FC-43F9-BFC1-A7E3E155DB7C}.Release|x86.ActiveCfg = Release|Win32
 		{F44BB16B-D1FC-43F9-BFC1-A7E3E155DB7C}.Release|x86.Build.0 = Release|Win32
-		{8678ACB7-FAF2-4018-923B-07F233B6636B}.Debug|x64.ActiveCfg = Debug|x64
-		{8678ACB7-FAF2-4018-923B-07F233B6636B}.Debug|x64.Build.0 = Debug|x64
-		{8678ACB7-FAF2-4018-923B-07F233B6636B}.Debug|x86.ActiveCfg = Debug|Win32
-		{8678ACB7-FAF2-4018-923B-07F233B6636B}.Debug|x86.Build.0 = Debug|Win32
-		{8678ACB7-FAF2-4018-923B-07F233B6636B}.Release|x64.ActiveCfg = Release|x64
-		{8678ACB7-FAF2-4018-923B-07F233B6636B}.Release|x64.Build.0 = Release|x64
-		{8678ACB7-FAF2-4018-923B-07F233B6636B}.Release|x86.ActiveCfg = Release|Win32
-		{8678ACB7-FAF2-4018-923B-07F233B6636B}.Release|x86.Build.0 = Release|Win32
 		{15A2EB63-8112-4989-819F-C2BCC444C022}.Debug|x64.ActiveCfg = Debug|x64
 		{15A2EB63-8112-4989-819F-C2BCC444C022}.Debug|x64.Build.0 = Debug|x64
 		{15A2EB63-8112-4989-819F-C2BCC444C022}.Debug|x86.ActiveCfg = Debug|Win32
@@ -41,6 +42,14 @@ Global
 		{15A2EB63-8112-4989-819F-C2BCC444C022}.Release|x64.Build.0 = Release|x64
 		{15A2EB63-8112-4989-819F-C2BCC444C022}.Release|x86.ActiveCfg = Release|Win32
 		{15A2EB63-8112-4989-819F-C2BCC444C022}.Release|x86.Build.0 = Release|Win32
+		{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}.Debug|x64.ActiveCfg = Debug|x64
+		{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}.Debug|x64.Build.0 = Debug|x64
+		{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}.Debug|x86.Build.0 = Debug|Win32
+		{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}.Release|x64.ActiveCfg = Release|x64
+		{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}.Release|x64.Build.0 = Release|x64
+		{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}.Release|x86.ActiveCfg = Release|Win32
+		{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
