@@ -91,7 +91,7 @@ namespace g8math
 			return x * x + y * y;
 		}
 
-		constexpr float Length() const noexcept{
+		float Length() const noexcept{
 			return std::sqrtf(LengthSq());
 		}
 
@@ -99,7 +99,7 @@ namespace g8math
 			return *this / Length();
 		}
 
-		constexpr Vector2D& NormalizeSelf() noexcept {
+		Vector2D& NormalizeSelf() noexcept {
 			float l = Length();
 			x /= l;
 			y /= l;
@@ -114,13 +114,13 @@ namespace g8math
 			return x * rhs.y - y * rhs.x;
 		}
 
-		constexpr Vector2D Rotation(float rot) const noexcept {
+		Vector2D Rotation(float rot) const noexcept {
 			float x = x * std::cos(rot) - y * std::sin(rot);
 			float y = x * std::sin(rot) + y * std::cos(rot);
 			return { x,y };
 		}
 
-		constexpr Vector2D& RotationSelf(float rot) noexcept {
+		Vector2D& RotationSelf(float rot) noexcept {
 			float x = x * std::cos(rot) - y * std::sin(rot);
 			float y = x * std::sin(rot) + y * std::cos(rot);
 			this->x = x;
