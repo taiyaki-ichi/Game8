@@ -13,10 +13,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CollisionDetection", "Colli
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathTest", "MathTest\MathTest.vcxproj", "{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "Game\Game.vcxproj", "{79E23781-464B-462C-AFD2-D194FAA04B20}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		CollisionDetection\CollisionDetection.vcxitems*{15a2eb63-8112-4989-819f-c2bcc444c022}*SharedItemsImports = 4
 		Math\Math.vcxitems*{15a2eb63-8112-4989-819f-c2bcc444c022}*SharedItemsImports = 4
+		CollisionDetection\CollisionDetection.vcxitems*{79e23781-464b-462c-afd2-d194faa04b20}*SharedItemsImports = 4
+		Math\Math.vcxitems*{79e23781-464b-462c-afd2-d194faa04b20}*SharedItemsImports = 4
 		Math\Math.vcxitems*{8c045216-e6be-4f84-b7e3-81dfa6ca33fd}*SharedItemsImports = 4
 		CollisionDetection\CollisionDetection.vcxitems*{ab57dfbe-90de-4536-b9ba-1b72a175c97a}*SharedItemsImports = 9
 		Math\Math.vcxitems*{c6380970-6bf6-469b-bb05-43e907858cd4}*SharedItemsImports = 9
@@ -52,6 +56,14 @@ Global
 		{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}.Release|x64.Build.0 = Release|x64
 		{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}.Release|x86.ActiveCfg = Release|Win32
 		{8C045216-E6BE-4F84-B7E3-81DFA6CA33FD}.Release|x86.Build.0 = Release|Win32
+		{79E23781-464B-462C-AFD2-D194FAA04B20}.Debug|x64.ActiveCfg = Debug|x64
+		{79E23781-464B-462C-AFD2-D194FAA04B20}.Debug|x64.Build.0 = Debug|x64
+		{79E23781-464B-462C-AFD2-D194FAA04B20}.Debug|x86.ActiveCfg = Debug|Win32
+		{79E23781-464B-462C-AFD2-D194FAA04B20}.Debug|x86.Build.0 = Debug|Win32
+		{79E23781-464B-462C-AFD2-D194FAA04B20}.Release|x64.ActiveCfg = Release|x64
+		{79E23781-464B-462C-AFD2-D194FAA04B20}.Release|x64.Build.0 = Release|x64
+		{79E23781-464B-462C-AFD2-D194FAA04B20}.Release|x86.ActiveCfg = Release|Win32
+		{79E23781-464B-462C-AFD2-D194FAA04B20}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

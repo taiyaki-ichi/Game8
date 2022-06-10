@@ -9,6 +9,5 @@ namespace g8
 		float width{};
 		float height{};
 		float scale{};
-		float rotation{};
 	};
 }

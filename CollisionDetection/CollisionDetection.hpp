@@ -3,8 +3,8 @@
 
 namespace g8
 {
-	template<typename InputIterator,typename OutputIterator,typename IsHitPolicy>
-	void CollisionDetection(InputIterator first, InputIterator last, OutputIterator result,IsHitPolicy isHItPolicy)
+	template<typename InputIterator,typename AddHitPolicy, typename IsHitPolicy>
+	void CollisionDetection(InputIterator first, InputIterator last, AddHitPolicy addHitPolicy,IsHitPolicy isHitPolicy)
 	{
 		auto iter1= first;
 		while (iter1 != last)
@@ -12,10 +12,9 @@ namespace g8
 			auto iter2 = iter1 + 1;
 			while (iter2 != last)
 			{
-				if (isHItPolicy(*iter1, *iter2))
+				if (isHitPolicy(*iter1, *iter2))
 				{
-					*(result++) = iter1;
-					*(result++) = iter2;
+					addHitPolicy(iter1, iter2);
 				}
 
 				iter2++;
