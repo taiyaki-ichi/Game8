@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathTest", "MathTest\MathTe
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		CollisionDetection\CollisionDetection.vcxitems*{15a2eb63-8112-4989-819f-c2bcc444c022}*SharedItemsImports = 4
+		Math\Math.vcxitems*{15a2eb63-8112-4989-819f-c2bcc444c022}*SharedItemsImports = 4
 		Math\Math.vcxitems*{8c045216-e6be-4f84-b7e3-81dfa6ca33fd}*SharedItemsImports = 4
 		CollisionDetection\CollisionDetection.vcxitems*{ab57dfbe-90de-4536-b9ba-1b72a175c97a}*SharedItemsImports = 9
 		Math\Math.vcxitems*{c6380970-6bf6-469b-bb05-43e907858cd4}*SharedItemsImports = 9

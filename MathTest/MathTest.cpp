@@ -14,7 +14,7 @@ namespace MathTest
 		
 		TEST_METHOD(TestVector2D001)
 		{
-			using namespace g8math;
+			using namespace g8;
 
 			Vector2D a{ 1.f,2.f };
 			Vector2D b{ 3.f,4.f };
@@ -36,7 +36,7 @@ namespace MathTest
 
 		TEST_METHOD(TestVector2D002)
 		{
-			using namespace g8math;
+			using namespace g8;
 
 			Vector2D a{ 3.f,4.f };
 
@@ -62,7 +62,7 @@ namespace MathTest
 
 		TEST_METHOD(TestVector2D003)
 		{
-			using namespace g8math;
+			using namespace g8;
 
 			Vector2D a{ 1.f,2.f };
 
@@ -98,7 +98,7 @@ namespace MathTest
 
 		TEST_METHOD(TestVector2D004)
 		{
-			using namespace g8math;
+			using namespace g8;
 
 			Vector2D a{ 3.f,4.f };
 
@@ -109,7 +109,7 @@ namespace MathTest
 
 		TEST_METHOD(TestVector2D005)
 		{
-			using namespace g8math;
+			using namespace g8;
 
 			Vector2D a{ 3.f,4.f };
 			auto l = a.Length();

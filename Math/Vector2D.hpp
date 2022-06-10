@@ -1,7 +1,7 @@
 #pragma once
 #include<cmath>
 
-namespace g8math
+namespace g8
 {
 	class Vector2D
 	{
@@ -115,14 +115,14 @@ namespace g8math
 		}
 
 		Vector2D Rotation(float rot) const noexcept {
-			float x = x * std::cos(rot) - y * std::sin(rot);
-			float y = x * std::sin(rot) + y * std::cos(rot);
+			float x = this->x * std::cos(rot) - this->y * std::sin(rot);
+			float y = this->x * std::sin(rot) + this->y * std::cos(rot);
 			return { x,y };
 		}
 
 		Vector2D& RotationSelf(float rot) noexcept {
-			float x = x * std::cos(rot) - y * std::sin(rot);
-			float y = x * std::sin(rot) + y * std::cos(rot);
+			float x = this->x * std::cos(rot) - this->y * std::sin(rot);
+			float y = this->x * std::sin(rot) + this->y * std::cos(rot);
 			this->x = x;
 			this->y = y;
 			return *this;
