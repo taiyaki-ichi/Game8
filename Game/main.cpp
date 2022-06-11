@@ -8,11 +8,11 @@ int main()
 	stage.width = 200.f;
 	stage.height = 200.f;
 
-	stage.kinkLine[0].line = -60;
+	stage.kinkLine[0].line = 80;
 	stage.kinkLine[0].isX = true;
 	stage.kinkLine[0].dir = false;
 
-	stage.kinkLine[1].line = -60;
+	stage.kinkLine[1].line = 80;
 	stage.kinkLine[1].isX = false;
 	stage.kinkLine[1].dir = false;
 
@@ -24,6 +24,8 @@ int main()
 	g8::StagePosition pos{};
 	pos.dimension = true;
 
+	g8::Rect rect{ pos.position,20,20,1.f };
+
 	while (true)
 	{
 		std::cout << (pos.dimension ? "omote" : "ura") << std::endl;
@@ -31,6 +33,20 @@ int main()
 		std::cout << "pos y : " << pos.position.y << std::endl;
 		std::cout << std::endl;
 
+		rect.position = pos.position;
+		auto rects = stage.GetSplitRect(rect, pos.dimension);
+
+		for (auto& r : rects)
+		{
+			std::cout << "pos x : " << r.position.x << std::endl;
+			std::cout << "pos y : " << r.position.y << std::endl;
+			std::cout << "width: " << r.width << std::endl;
+			std::cout << "height: " << r.height << std::endl;
+			std::cout << std::endl;
+		}
+
+		std::cout << std::endl;
+		std::cout << std::endl;
 		float x, y;
 		std::cin >> x >> y;
 

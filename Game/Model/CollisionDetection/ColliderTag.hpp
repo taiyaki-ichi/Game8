@@ -7,5 +7,6 @@ namespace g8
 		None,
 		Player,
 		Ground,
+		Wall,
 	};
 }

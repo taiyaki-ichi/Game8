@@ -1,17 +1,20 @@
 #pragma once
 #include"Vector2D.hpp"
+#include"IObject.hpp"
+#include"CollisionDetection/ICollider.hpp"
 
 namespace g8
 {
-	class Player
+	class Player : public IStageObject, public ICollider
 	{
-		Vector2D position{};
+		Rect collider{};
 
 	public:
-		void Update1();
+		void Update1() override;
+		void Update2() override;
 
-		void Update2();
-
-		void AddHitObject();
+		Rect const& GetRect() override;
+		void AddHitObject(ICollider const&) override;
+		ColliderTag GetColliderTag() override;
 	};
 }
