@@ -9,6 +9,5 @@
     <ClInclude Include="Model\CollisionDetection\ColliderTag.hpp" />
     <ClInclude Include="Model\CollisionDetection\ColliderCollisionDetection.hpp" />
     <ClInclude Include="Model\IObject.hpp" />
-    <ClInclude Include="Model\Stage.hpp" />
   </ItemGroup>
 </Project>

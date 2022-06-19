@@ -153,7 +153,6 @@
     <ClInclude Include="Model\CollisionDetection\ColliderTag.hpp" />
     <ClInclude Include="Model\IObject.hpp" />
     <ClInclude Include="Model\Player.hpp" />
-    <ClInclude Include="Model\Stage.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
