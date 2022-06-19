@@ -2,12 +2,19 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Model\Helper.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Model\CollisionDetection\ICollider.hpp" />
+    <ClInclude Include="Model\ICollider.hpp" />
     <ClInclude Include="Model\Player.hpp" />
-    <ClInclude Include="Model\CollisionDetection\ColliderTag.hpp" />
     <ClInclude Include="Model\CollisionDetection\ColliderCollisionDetection.hpp" />
-    <ClInclude Include="Model\IObject.hpp" />
+    <ClInclude Include="Model\IUpdater.hpp" />
+    <ClInclude Include="Model\Panel.hpp" />
+    <ClInclude Include="Model\IPausable.hpp" />
+    <ClInclude Include="Model\Stage.hpp" />
+    <ClInclude Include="Model\StageData.hpp" />
+    <ClInclude Include="Model\ObjectTag.hpp" />
+    <ClInclude Include="Model\Ground.hpp" />
+    <ClInclude Include="Model\Helper.hpp" />
   </ItemGroup>
 </Project>

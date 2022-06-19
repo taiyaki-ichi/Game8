@@ -146,13 +146,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Model\Helper.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Model\CollisionDetection\ICollider.hpp" />
+    <ClInclude Include="Model\Ground.hpp" />
+    <ClInclude Include="Model\Helper.hpp" />
+    <ClInclude Include="Model\ICollider.hpp" />
     <ClInclude Include="Model\CollisionDetection\ColliderCollisionDetection.hpp" />
-    <ClInclude Include="Model\CollisionDetection\ColliderTag.hpp" />
-    <ClInclude Include="Model\IObject.hpp" />
+    <ClInclude Include="Model\IPausable.hpp" />
+    <ClInclude Include="Model\IUpdater.hpp" />
+    <ClInclude Include="Model\ObjectTag.hpp" />
+    <ClInclude Include="Model\Panel.hpp" />
     <ClInclude Include="Model\Player.hpp" />
+    <ClInclude Include="Model\Stage.hpp" />
+    <ClInclude Include="Model\StageData.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

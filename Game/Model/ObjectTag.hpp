@@ -2,7 +2,7 @@
 
 namespace g8
 {
-	enum class ColliderTag
+	enum class ObjectTag
 	{
 		None,
 		Player,
