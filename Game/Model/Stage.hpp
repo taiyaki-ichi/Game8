@@ -38,7 +38,23 @@ namespace g8
 				panel[1].AddCollider(&g);
 			}
 
-			//Œã‚ÍÄ‹A“I‚É‚â‚ê‚é
+			
+			std::array<Vector2D, 4> paper{ {
+				{stageData.width / 2.f,stageData.height / 2.f},
+				{-stageData.width / 2.f,stageData.height / 2.f},
+				{-stageData.width / 2.f,-stageData.height / 2.f},
+				{stageData.width / 2.f,-stageData.height / 2.f}
+				} };
+
+			for (std::size_t i = 0; i < stageData.MAX_KINK_LINE; i++)
+			{
+				auto const& kinkLine = stageData.kinkLines[i];
+
+				
+
+
+
+			}
 
 
 		

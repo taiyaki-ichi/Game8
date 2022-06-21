@@ -25,4 +25,6 @@ namespace g8
 
 		return { -(result.x - moveX),result.y - moveY };
 	}
+
+
 }
