@@ -18,11 +18,6 @@ namespace g8
 	constexpr Point CalcIntersection(Point const& a, Point const& b, Point const& c, Point const& d);
 
 	//’¼üax+by+c=0‚Å•ï‚ğ•ªŠ„‚·‚é
-	template<typename InputIter,typename OutputIter>
-	constexpr void SplitConvex(float a, float b, float c, InputIter first, InputIter last,
-		OutputIter result1, OutputIter result2);
-
-	//’¼üax+by+c=0‚Å•ï‚ğ•ªŠ„‚·‚é
 	//[first,result)‚Æ[result,last)‚É‚Å•ªŠ„‚³‚ê‚é
 	template<typename Iter>
 	constexpr Iter SplitConvex(Iter first, Iter last, float a, float b, float c);
@@ -54,55 +49,6 @@ namespace g8
 		auto t = -vec2.Cross(d - b) / vec1.Cross(vec2);
 
 		return vec1 * t + b;
-	}
-
-	template<typename InputIter, typename OutputIter>
-	constexpr void SplitConvex(float a, float b, float c, InputIter first, InputIter last,
-		OutputIter result1, OutputIter result2)
-	{
-		using Point = typename std::iterator_traits<InputIter>::value_type;
-
-		Point p1{ 0,-c / b };
-		Point p2{ -c / a,0 };
-
-		auto isPointEqual = [](auto const& a, auto const& b)->bool {
-			auto p = a - b;
-			return std::abs(p.x) <= std::numeric_limits<decltype(p.x)>::epsilon()
-				&& std::abs(p.y) <= std::numeric_limits<decltype(p.y)>::epsilon();
-		};
-
-		auto addResult = [&isPointEqual](auto& iter, auto const& point)-> void {
-			if (!isPointEqual(*iter, point))
-				*(iter++) = point;
-		};
-
-		auto vec1 = p2 - p1;
-		auto vec2 = p2 - *(last - 1);
-		bool prevSize = vec1.Cross(vec2) > 0;
-		auto iter = first;
-		for (std::size_t i = 0; i < std::distance(first, last); i++)
-		{
-			auto prevIter = (iter == first) ? (last - 1) : iter - 1;
-
-			vec2 = p2 - *iter;
-			bool newSide = vec1.Cross(vec2) > 0;
-
-			if (newSide != prevSize)
-			{
-				auto p = CalcIntersection(p1, p2, *prevIter, *iter);
-
-				addResult(result1, p);
-				addResult(result2, p);
-			}
-
-			if (newSide)
-				addResult(result1, *iter);
-			else
-				addResult(result2, *iter);
-
-			prevSize = newSide;
-			iter = (iter + 1 == last) ? first : iter + 1;
-		}
 	}
 
 	template<typename Iter>
